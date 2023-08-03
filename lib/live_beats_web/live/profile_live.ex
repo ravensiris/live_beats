@@ -30,7 +30,7 @@ defmodule LiveBeatsWeb.ProfileLive do
               JS.push("switch_profile", value: %{user_id: nil}, target: "#player", loading: "#player")
             }
           >
-            <.icon name={:stop} /><span class="ml-2">Stop Listening</span>
+            <.icon name={:stop} /><span class="ml-2"><%= gettext("Stop Listening") %></span>
           </.button>
         <% else %>
           <.button
