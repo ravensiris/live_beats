@@ -31,3 +31,17 @@ npm-debug.log
 
 /priv/uploads
 /tmp
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+.env
+.nix-hex
+.nix-mix
+
