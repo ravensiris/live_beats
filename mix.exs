@@ -5,7 +5,7 @@ defmodule LiveBeats.MixProject do
     [
       app: :live_beats,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -32,28 +32,28 @@ defmodule LiveBeats.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.7.1"},
-      {:phoenix_live_view, "~> 0.18.16"},
-      {:phoenix_live_dashboard, "~> 0.7.2"},
+      {:phoenix, "~> 1.7.7"},
+      {:phoenix_live_view, "~> 0.19.5"},
+      {:phoenix_live_dashboard, "~> 0.8.0"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.6"},
       {:ecto_network, "~> 1.3.0"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, ">= 0.17.2"},
       {:phoenix_html, "~> 3.3", override: true},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:floki, ">= 0.30.0", only: :test},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
-      {:swoosh, "~> 1.3"},
+      {:swoosh, "~> 1.11"},
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.18"},
+      {:gettext, "~> 0.22.3"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:mint, "~> 1.0"},
       {:heroicons, "~> 0.2.2"},
-      {:castore, "~> 0.1.13"},
-      {:tailwind, "~> 0.1"},
+      {:castore, "~> 1.0.3"},
+      {:tailwind, "~> 0.2"},
       {:libcluster, "~> 3.3.1"}
     ]
   end
